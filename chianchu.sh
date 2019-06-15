@@ -6,3 +6,4 @@ cd ~/chinachu/
 ./chinachu installer
 cp config.sample.json config.json
 vim config.json
+echo [] > rules.json
