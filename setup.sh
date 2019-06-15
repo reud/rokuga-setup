@@ -43,6 +43,9 @@ echo "  types:" >> tuners.yml
 echo "    - GR" >> tuners.yml
 echo "  command: recdvb --b25 --dev 0 <channel> - -" >> tuners.yml
 echo "start getting channels..."
+dmesg | grep firmware
+echo "driver がロードされているか確認してください"
+sudo reboot
 curl -X PUT "http://localhost:40772/api/config/channels/scan"
 echo "starting mirakurun..."
 sudo mirakurun status
