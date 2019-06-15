@@ -36,10 +36,14 @@ sudo pm2 startup
 echo "installing mirakurun..."
 sudo npm install mirakurun -g --unsafe-perm --production
 cd /usr/local/etc/mirakurun
-echo "please set a tuners.ymk"
+echo "please set a tuners.yml"
 sudo nano tuners.yml
+echo "- name: PX-S1UD-1 >> tuners.yml
+echo "  types:" >> tuners.yml
+echo "    - GR" >> tuners.yml
+echo "  command: recdvb --b25 --dev 0 <channel> - -" >> tuners.yml
 echo "start getting channels..."
-curl -X PUT "http://localhost:40772/api/config/channels/scan
+curl -X PUT "http://localhost:40772/api/config/channels/scan"
 echo "starting mirakurun..."
 sudo mirakurun status
 echo "installing chinachu"
