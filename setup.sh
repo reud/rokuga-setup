@@ -60,5 +60,5 @@ sudo chown -R $USER:$GROUP ~/.config
 ./chinachu installer
 cp config.sample.json config.json
 nano config.json
-
+echo [] > rules.json
 
