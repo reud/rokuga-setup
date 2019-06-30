@@ -59,6 +59,6 @@ sudo chown -R $USER:$GROUP ~/.npm
 sudo chown -R $USER:$GROUP ~/.config
 ./chinachu installer
 cp config.sample.json config.json
-vim config.json
+nano config.json
 
 
