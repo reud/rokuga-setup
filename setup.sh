@@ -51,8 +51,8 @@ curl -X PUT "http://localhost:40772/api/config/channels/scan"
 echo "starting mirakurun..."
 sudo mirakurun status
 echo "installing chinachu"
-git clone git://github.com/kanreisa/Chinachu.git ~/chinachu
-cd ~/chinachu/
+git clone git://github.com/kanreisa/Chinachu.git
+cd ~/Chinachu/
 ./chinachu installer
 cp config.sample.json config.json
 vim config.json
