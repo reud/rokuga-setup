@@ -3,6 +3,7 @@ echo "installing essentials"
 sudo apt-get install -y vim samba ntp wget curl git make cmake zip
 sudo apt-get install -y pcscd libpcsclite1 libpcsclite-dev libccid pcsc-tools
 sudo apt-get install -y autoconf build-essential git-core libssl-dev libtool libboost-all-dev pkg-config yasm pkg-config
+sudo timedatectl set-timezone Asia/Tokyo
 echi "install PX-S1UD driver"
 mkdir ~/PX-S1UD
 cd ~/PX-S1UD
