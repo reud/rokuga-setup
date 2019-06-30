@@ -55,6 +55,8 @@ git clone git://github.com/kanreisa/Chinachu.git
 cd ~/Chinachu/
 sudo chmod 777 /usr/local/lib
 sudo chmod 777 /usr/local/lib/node_modules
+sudo chown -R $USER:$GROUP ~/.npm
+sudo chown -R $USER:$GROUP ~/.config
 ./chinachu installer
 cp config.sample.json config.json
 vim config.json
