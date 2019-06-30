@@ -28,7 +28,7 @@ cd recdvb-1.3.1
 make 
 sudo make install
 echo "installing nodejs and pm2"
-sudo apt-get install build-essential curl git-core vainfo
+sudo apt-get install build-essential curl git-core vainfo -y
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo npm install pm2 -g
