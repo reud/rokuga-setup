@@ -38,7 +38,7 @@ sudo npm install mirakurun -g --unsafe-perm --production
 cd /usr/local/etc/mirakurun
 echo "please set a tuners.yml"
 sudo nano tuners.yml
-echo "- name: PX-S1UD-1 >> tuners.yml
+echo "- name: PX-S1UD-1" >> tuners.yml
 echo "  types:" >> tuners.yml
 echo "    - GR" >> tuners.yml
 echo "  command: recdvb --b25 --dev 0 <channel> - -" >> tuners.yml
