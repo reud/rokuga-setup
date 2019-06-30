@@ -53,6 +53,8 @@ sudo mirakurun status
 echo "installing chinachu"
 git clone git://github.com/kanreisa/Chinachu.git
 cd ~/Chinachu/
+sudo chmod 777 /usr/local/lib
+sudo chmod 777 /usr/local/lib/node_modules
 ./chinachu installer
 cp config.sample.json config.json
 vim config.json
